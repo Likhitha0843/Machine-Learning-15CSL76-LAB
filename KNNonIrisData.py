@@ -1,7 +1,6 @@
 import pandas as pd
-from pandas import DataFrame
 
-df_irisbd = DataFrame.from_csv(r"C:\Users\Administrator\PycharmProjects\candidateelimination\iris.data",header=None,index_col=None)
+df_irisbd = pd.read_csv("iris.csv",header=None,index_col=None)
 print(df_irisbd)
 X = df_irisbd.iloc[:, :-1].values
 y = df_irisbd.iloc[:, 4].values
